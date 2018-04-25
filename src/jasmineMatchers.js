@@ -337,6 +337,11 @@ if(typeof(window.jasmineMatchers) === "undefined"){
 				var result = {
 					pass: false
 				};
+
+				if(isValidElement(actual) === false){
+					result.message = "Please specify an Element";
+					return result;
+				}
 				if(jQuery(actual).is(":checked") === true){
 					result.pass = true;
 					return result;
@@ -359,6 +364,10 @@ if(typeof(window.jasmineMatchers) === "undefined"){
 				var result = {
 					pass: false
 				};
+				if(isValidElement(actual) === false){
+					result.message = "Please specify an Element";
+					return result;
+				}
 				if(jQuery(actual).is(":disabled") === true){
 					result.pass = true;
 					return result;
@@ -381,6 +390,10 @@ if(typeof(window.jasmineMatchers) === "undefined"){
 				var result = {
 					pass: false
 				};
+				if(isValidElement(actual) === false){
+					result.message = "Please specify an Element";
+					return result;
+				}
 				if(jQuery(actual).is(":empty") === true){
 					result.pass = true;
 					return result;
@@ -487,6 +500,10 @@ if(typeof(window.jasmineMatchers) === "undefined"){
 				var result = {
 					pass: false
 				};
+				if(isValidElement(actual) === false){
+					result.message = "Please specify an Element";
+					return result;
+				}
 				if(jQuery.type(selector) !== "string"){
 					result.message = "Please specify the selector as string";
 					return result;
@@ -513,6 +530,10 @@ if(typeof(window.jasmineMatchers) === "undefined"){
 				var result = {
 					pass: false
 				};
+				if(isValidElement(actual) === false){
+					result.message = "Please specify an Element";
+					return result;
+				}
 				if(jQuery(actual).is(":selected") === true){
 					result.pass = true;
 					return result;
@@ -535,6 +556,10 @@ if(typeof(window.jasmineMatchers) === "undefined"){
 				var result = {
 					pass: false
 				};
+				if(isValidElement(actual) === false){
+					result.message = "Please specify an Element";
+					return result;
+				}
 				if(jQuery(actual).is(":visible") === true){
 					result.pass = true;
 					return result;
@@ -559,6 +584,10 @@ if(typeof(window.jasmineMatchers) === "undefined"){
 				var result = {
 					pass: false
 				};
+				if(isValidElement(actual) === false){
+					result.message = "Please specify an Element";
+					return result;
+				}
 				if(jQuery.type(attributeName) !== "string"){
 					result.message = "Please specify the attribute as string";
 					return result;
@@ -586,6 +615,10 @@ if(typeof(window.jasmineMatchers) === "undefined"){
 				var result = {
 					pass: false
 				};
+				if(isValidElement(actual) === false){
+					result.message = "Please specify an Element";
+					return result;
+				}
 				if(jQuery.type(className) !== "string"){
 					result.message = "Please specify the name of the CSS class as string";
 					return result;
@@ -614,6 +647,10 @@ if(typeof(window.jasmineMatchers) === "undefined"){
 				var result = {
 					pass: false
 				};
+				if(isValidElement(actual) === false){
+					result.message = "Please specify an Element";
+					return result;
+				}
 				if(jQuery.type(propertyName) !== "string"){
 					result.message = "Please specify the CSS property as string";
 					return result;
@@ -647,6 +684,10 @@ if(typeof(window.jasmineMatchers) === "undefined"){
 				var result = {
 					pass: false
 				};
+				if(isValidElement(actual) === false){
+					result.message = "Please specify an Element";
+					return result;
+				}
 				if(jQuery.type(propertyName) !== "string"){
 					result.message = "Please specify the property as string";
 					return result;
