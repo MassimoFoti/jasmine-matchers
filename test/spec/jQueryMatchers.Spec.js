@@ -39,6 +39,13 @@ describe("jasmineMatchers", function(){
 
 				describe("Fails if:", function(){
 
+					it("The object is neither a jQuery object nor a HTMLElement", function(){
+						var notValidElement = "text";
+						var result = matcher.compare(notValidElement);
+						expect(result.pass).toBe(false);
+						expect(result.message).toBe("Please specify an Element");
+					});
+
 					it("The jQuery object is an unchecked checkbox", function(){
 						var element = jQuery("#box");
 						var result = matcher.compare(element);
@@ -84,6 +91,13 @@ describe("jasmineMatchers", function(){
 
 				describe("Fails if:", function(){
 
+					it("The object is neither a jQuery object nor a HTMLElement", function(){
+						var notValidElement = "text";
+						var result = matcher.compare(notValidElement);
+						expect(result.pass).toBe(false);
+						expect(result.message).toBe("Please specify an Element");
+					});
+
 					it("The jQuery object is not disabled", function(){
 						var element = jQuery("#enabled");
 						var result = matcher.compare(element);
@@ -121,6 +135,13 @@ describe("jasmineMatchers", function(){
 				});
 
 				describe("Fails if:", function(){
+
+					it("The object is neither a jQuery object nor a HTMLElement", function(){
+						var notValidElement = "text";
+						var result = matcher.compare(notValidElement);
+						expect(result.pass).toBe(false);
+						expect(result.message).toBe("Please specify an Element");
+					});
 
 					it("The jQuery object contains child elements", function(){
 						var element = jQuery("<div><span></span></div>");
@@ -369,6 +390,13 @@ describe("jasmineMatchers", function(){
 
 				describe("Fails if:", function(){
 
+					it("The object is neither a jQuery object nor a HTMLElement", function(){
+						var notValidElement = "text";
+						var result = matcher.compare(notValidElement);
+						expect(result.pass).toBe(false);
+						expect(result.message).toBe("Please specify an Element");
+					});
+
 					it("The jQuery object does not matches the selector", function(){
 						var element = jQuery("<div class='test'></div>");
 						var result = matcher.compare(element, "span");
@@ -413,6 +441,13 @@ describe("jasmineMatchers", function(){
 				});
 
 				describe("Fails if:", function(){
+
+					it("The object is neither a jQuery object nor a HTMLElement", function(){
+						var notValidElement = "text";
+						var result = matcher.compare(notValidElement);
+						expect(result.pass).toBe(false);
+						expect(result.message).toBe("Please specify an Element");
+					});
 
 					it("The jQuery object is not selected", function(){
 						var element = jQuery("#unselected");
@@ -470,6 +505,13 @@ describe("jasmineMatchers", function(){
 
 				describe("Fails if:", function(){
 
+					it("The object is neither a jQuery object nor a HTMLElement", function(){
+						var notValidElement = "text";
+						var result = matcher.compare(notValidElement);
+						expect(result.pass).toBe(false);
+						expect(result.message).toBe("Please specify an Element");
+					});
+
 					it("The jQuery object CSS contains display: none", function(){
 						var noneDisplayResult = matcher.compare(jQuery("#noneDisplay"));
 						expect(noneDisplayResult.pass).toBe(false);
@@ -525,6 +567,13 @@ describe("jasmineMatchers", function(){
 				});
 
 				describe("Fails if:", function(){
+
+					it("The object is neither a jQuery object nor a HTMLElement", function(){
+						var notValidElement = "text";
+						var result = matcher.compare(notValidElement);
+						expect(result.pass).toBe(false);
+						expect(result.message).toBe("Please specify an Element");
+					});
 
 					it("The attribute is not found", function(){
 						var element = jQuery("<div class='test'></div>");
@@ -582,6 +631,13 @@ describe("jasmineMatchers", function(){
 				});
 
 				describe("Fails if:", function(){
+
+					it("The object is neither a jQuery object nor a HTMLElement", function(){
+						var notValidElement = "text";
+						var result = matcher.compare(notValidElement);
+						expect(result.pass).toBe(false);
+						expect(result.message).toBe("Please specify an Element");
+					});
 
 					it("The class is not found", function(){
 						var element = jQuery("<div class='test'></div>");
@@ -646,6 +702,13 @@ describe("jasmineMatchers", function(){
 
 				describe("Fails if:", function(){
 
+					it("The object is neither a jQuery object nor a HTMLElement", function(){
+						var notValidElement = "text";
+						var result = matcher.compare(notValidElement);
+						expect(result.pass).toBe(false);
+						expect(result.message).toBe("Please specify an Element");
+					});
+
 					it("The CSS property is not found", function(){
 						var element = jQuery("#blockDisplay");
 						var result = matcher.compare(element, "border-width");
@@ -703,6 +766,13 @@ describe("jasmineMatchers", function(){
 				});
 
 				describe("Fails if:", function(){
+
+					it("The object is neither a jQuery object nor a HTMLElement", function(){
+						var notValidElement = "text";
+						var result = matcher.compare(notValidElement);
+						expect(result.pass).toBe(false);
+						expect(result.message).toBe("Please specify an Element");
+					});
 
 					it("The property is not found", function(){
 						var element = jQuery("#radioChecked");
